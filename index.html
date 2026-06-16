@@ -1,11 +1,12 @@
 <!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TimeTrack v2.20 — Windows Screen-Time Tracker</title>
-  <meta name="description" content="TimeTrack is a Windows screen-time tracker for apps, browser activity, idle time, focus sessions, notes, categories, and reports." />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>TimeTrack v2.20 — Windows Screen-Time Tracker | Gumroad Landing Page</title>
+<meta content="Download TimeTrack v2.20 for Windows — a screen-time tracker for apps, browser activity, idle time, focus sessions, notes, categories, and reports." name="description"/>
+<style>
     :root {
       --bg: #06101f;
       --bg2: #0a1628;
@@ -818,8 +819,19 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
       margin-top: 24px;
+      align-items: start;
+    }
+    .legal-column {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      min-width: 0;
+      align-self: start;
     }
     .legal-card {
+      width: 100%;
+      height: auto;
+      align-self: flex-start;
       border: 1px solid var(--line);
       border-radius: 24px;
       background: rgba(13,25,43,.76);
@@ -890,485 +902,449 @@
     }
     .footer-links a:hover { color: var(--cyan2); text-decoration: underline; }
     @media (max-width: 820px) {
-      .legal-grid { grid-template-columns: 1fr; }
+      .legal-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .legal-column { display: contents; }
+      #copyright { order: 1; }
+      #privacy { order: 2; }
+      #terms { order: 3; }
+      #software-licence { order: 4; }
     }
 
   </style>
 </head>
-
 <body>
-  <div class="page">
-    <nav class="nav">
-      <div class="wrap nav-inner">
-        <a class="brand" href="#top" aria-label="TimeTrack home">
-          <span class="logo">👁</span>
-          <span>TimeTrack</span>
-        </a>
-        <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#preview">Preview</a>
-          <a href="#how">How it works</a>
-          <a href="#legal">Legal</a>
-          <a href="#contact">Contact</a>
-          <a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
-        </div>
-      </div>
-    </nav>
-
-    <header class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">TimeTrack v2.20 · Windows screen-time tracker</div>
-          <h1>See where your PC time <span class="grad">actually goes.</span></h1>
-          <p class="lead">TimeTrack gives you a clear picture of active screen time, app usage, browser activity, idle time, focus sessions, notes, categories, and reports — without turning your workflow into a complicated dashboard.</p>
-
-          <div class="hero-actions">
-            <a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
-            <a class="btn secondary" href="#preview">View app preview</a>
-            <span class="btn disabled" aria-disabled="true">macOS coming soon</span>
-          </div>
-
-          <div class="meta-row">
-            <span class="meta-pill">Local-first</span>
-            <span class="meta-pill">Idle time separated</span>
-            <span class="meta-pill">Focus + notes included</span>
-            <span class="meta-pill">Simple activation after purchase</span>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="app-window">
-            <div class="window-bar">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="window-name">Daily focus report</span>
-            </div>
-            <div class="app-body">
-              <div class="app-head">
-                <div class="app-icon">👁</div>
-                <div>
-                  <div class="app-title">Today overview</div>
-                  <div class="app-sub">Active time, idle time, tracked apps</div>
-                </div>
-              </div>
-
-              <div class="kpis">
-                <div class="kpi"><b>6h 12m</b><span>Total active time</span></div>
-                <div class="kpi"><b>42m</b><span>Idle separated</span></div>
-                <div class="kpi"><b>18</b><span>Apps tracked</span></div>
-              </div>
-
-              <div class="bar-list">
-                <div class="bar-row"><span>Study / work</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><b>78%</b></div>
-                <div class="bar-row"><span>Entertainment</span><div class="bar-track"><div class="bar-fill" style="width:52%"></div></div><b>52%</b></div>
-                <div class="bar-row"><span>Creativity</span><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><b>36%</b></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="section" id="features">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <div class="eyebrow">Features</div>
-              <h2>Built around the way people actually use PCs.</h2>
-            </div>
-            <p class="section-lead">The point is not just “count time.” TimeTrack is built to explain where your time goes, separate real activity from away time, and give you enough control to correct categories when the app gets context wrong.</p>
-          </div>
-
-          <div class="features-layout">
-            <aside class="feature-intro">
-              <h3>What TimeTrack helps answer</h3>
-              <p>Where did my day go? Which apps took the most time? Was I actually active, or was the PC just left on? What part of my browser use was work, entertainment, or creative activity?</p>
-              <div class="mini-stack">
-                <span>Tracking base <small>Apps + browser</small></span>
-                <span>Accuracy logic <small>Idle excluded</small></span>
-                <span>Behaviour layer <small>Focus + notes</small></span>
-                <span>Review layer <small>Reports + timeline</small></span>
-              </div>
-            </aside>
-
-            <div class="feature-grid">
-              <article class="feature-card"><span class="feature-num">01</span><b>Active screen time</b><p>Tracks active PC use while keeping idle / away time separate from totals.</p></article>
-              <article class="feature-card"><span class="feature-num">02</span><b>App usage</b><p>Shows how long your main Windows apps are used across the day.</p></article>
-              <article class="feature-card"><span class="feature-num">03</span><b>Browser details</b><p>Breaks browser usage into page/window labels while hiding low-value clutter.</p></article>
-              <article class="feature-card"><span class="feature-num">04</span><b>Category rules</b><p>Set apps or browser labels as Productivity, Entertainment, Creativity, or Other.</p></article>
-              <article class="feature-card"><span class="feature-num">05</span><b>Reports</b><p>Daily, weekly, and monthly summaries with top app and timeline-style insight.</p></article>
-              <article class="feature-card"><span class="feature-num">06</span><b>Focus sessions</b><p>Run focus and break sessions inside the same app you use to review time.</p></article>
-              <article class="feature-card"><span class="feature-num">07</span><b>Notes tab</b><p>Save and reload notes for reflections, task context, or session tracking.</p></article>
-              <article class="feature-card"><span class="feature-num">08</span><b>Theme controls</b><p>Adjust dark/light mode and interface colours for a better personal setup.</p></article>
-              <article class="feature-card"><span class="feature-num">09</span><b>Simple activation</b><p>Install after purchase and follow the in-app activation flow.</p></article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <section class="section" id="preview">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <div class="eyebrow">Interactive preview</div>
-              <h2>Click through a simplified TimeTrack window.</h2>
-            </div>
-            <p class="section-lead">This is a stylised mini-preview of the app tabs. It does not show every setting, but it gives buyers a clearer feel for how TimeTrack is structured before they download it.</p>
-          </div>
-
-          <div class="demo-shell" data-demo-tabs>
-            <div class="demo-top">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="demo-window-title">TimeTrack preview · v2.20</span>
-            </div>
-
-            <div class="demo-tabs" role="tablist" aria-label="TimeTrack preview tabs">
-              <button class="demo-tab active" type="button" data-tab="today">Today</button>
-              <button class="demo-tab" type="button" data-tab="reports">Reports</button>
-              <button class="demo-tab" type="button" data-tab="focus">Focus</button>
-              <button class="demo-tab" type="button" data-tab="notes">Notes</button>
-            </div>
-
-            <div class="demo-content">
-              <section class="demo-panel active" data-panel="today">
-                <div class="demo-panel-grid">
-                  <div class="demo-card">
-                    <h3>Today dashboard</h3>
-                    <p>See active screen time, app usage, category split, and current tracking state in one place.</p>
-
-                    <div class="demo-stat-grid">
-                      <div class="demo-stat"><b>1h 13m</b><span>active today</span></div>
-                      <div class="demo-stat"><b>15m</b><span>idle threshold</span></div>
-                      <div class="demo-stat"><b>ON</b><span>tracking status</span></div>
-                    </div>
-
-                    <div class="bar-list">
-                      <div class="bar-row"><span>ChatGPT</span><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><b>30m</b></div>
-                      <div class="bar-row"><span>Chrome</span><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><b>21m</b></div>
-                      <div class="bar-row"><span>Explorer</span><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><b>10m</b></div>
-                    </div>
-                  </div>
-
-                  <div class="demo-card">
-                    <h3>Apps / software</h3>
-                    <p>Low-value rows can stay hidden until they pass your selected threshold, keeping the view cleaner.</p>
-                    <div class="demo-table">
-                      <div class="demo-table-row head"><span>App</span><span>Time</span><span>Share</span></div>
-                      <div class="demo-table-row"><span>ChatGPT</span><span>30m</span><span>41%</span></div>
-                      <div class="demo-table-row"><span>Google Chrome</span><span>21m</span><span>29%</span></div>
-                      <div class="demo-table-row"><span>File Explorer</span><span>10m</span><span>14%</span></div>
-                    </div>
-                    <div class="demo-mini-note">Idle time is separated from total active screen time, so leaving your PC on does not inflate the main total.</div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="demo-panel" data-panel="reports">
-                <div class="demo-panel-grid">
-                  <div class="demo-card">
-                    <h3>Reports timeline</h3>
-                    <p>Review usage across days, identify high-usage periods, and quickly see which app took the most time.</p>
-                    <div class="demo-stat-grid">
-                      <div class="demo-stat"><b>10h 58m</b><span>total in view</span></div>
-                      <div class="demo-stat"><b>3h 39m</b><span>active average</span></div>
-                      <div class="demo-stat"><b>ChatGPT</b><span>top app</span></div>
-                    </div>
-                    <div class="demo-chart">
-                      <span class="col" data-label="Mon" style="height:32%"></span>
-                      <span class="col" data-label="Tue" style="height:18%"></span>
-                      <span class="col" data-label="Wed" style="height:43%"></span>
-                      <span class="col" data-label="Thu" style="height:78%"></span>
-                      <span class="col" data-label="Fri" style="height:38%"></span>
-                      <span class="col" data-label="Sat" style="height:88%"></span>
-                      <span class="col" data-label="Sun" style="height:24%"></span>
-                    </div>
-                  </div>
-
-                  <div class="demo-card">
-                    <h3>Browser insight</h3>
-                    <p>When a browser is the top app, TimeTrack can surface useful page/window labels instead of only saying “Chrome”.</p>
-                    <div class="demo-table">
-                      <div class="demo-table-row head"><span>Browser detail</span><span>Time</span><span>Type</span></div>
-                      <div class="demo-table-row demo-browser-row"><span>Chrome · TimeTrack</span><span>18m</span><span>Work</span></div>
-                      <div class="demo-table-row demo-browser-row"><span>Chrome · Gumroad</span><span>12m</span><span>Work</span></div>
-                      <div class="demo-table-row demo-browser-row"><span>Chrome · Products</span><span>8m</span><span>Other</span></div>
-                    </div>
-                    <div class="demo-mini-note">Browser details appear after the selected minimum threshold, reducing clutter from tiny one-off page titles.</div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="demo-panel" data-panel="focus">
-                <div class="demo-panel-grid">
-                  <div class="demo-card">
-                    <h3>Focus session</h3>
-                    <p>Use short blocks to stay on task, then take a break. The timer is separate from tracking reports.</p>
-                    <div class="demo-status">Focus session running · Round 1 of 2</div>
-                    <div class="demo-focus-time">24:18</div>
-                    <div class="demo-controls">
-                      <span class="demo-control">Start</span>
-                      <span class="demo-control">Pause</span>
-                      <span class="demo-control">Break</span>
-                      <span class="demo-control">Sound optional</span>
-                    </div>
-                  </div>
-
-                  <div class="demo-card">
-                    <h3>Intentional sessions</h3>
-                    <p>Focus sessions are useful when you want to stop drifting between apps and measure deliberate work time.</p>
-                    <div class="notes-box">
-                      <b>Session plan</b><br>
-                      Finish one clear task.<br>
-                      Avoid switching apps until the block ends.<br>
+<div class="page">
+<nav class="nav">
+<div class="wrap nav-inner">
+<a aria-label="TimeTrack home" class="brand" href="#top">
+<span class="logo">👁</span>
+<span>TimeTrack</span>
+</a>
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#preview">Preview</a>
+<a href="#how">How it works</a>
+<a href="#purchase">Purchase</a>
+<a href="#legal">Legal</a>
+<a href="#contact">Contact</a>
+<a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
+</div>
+</div>
+</nav>
+<header class="hero" id="top">
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">TimeTrack v2.20 · Windows screen-time tracker · Gumroad download</div>
+<h1>See where your PC time <span class="grad">actually goes.</span></h1>
+<p class="lead">TimeTrack gives Windows users a clearer picture of active screen time, app usage, browser activity, idle time, focus sessions, notes, categories, and reports — then delivers through a simple Gumroad download.</p>
+<div class="hero-actions">
+<a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
+<a class="btn secondary" href="#preview">View app preview</a>
+<span aria-disabled="true" class="btn disabled">macOS coming soon</span>
+</div>
+<div class="meta-row">
+<span class="meta-pill">Local-first</span>
+<span class="meta-pill">Idle time separated</span>
+<span class="meta-pill">Focus + notes included</span>
+<span class="meta-pill">Gumroad download</span><span class="meta-pill">Simple activation after purchase</span>
+</div>
+</div>
+<div class="hero-card">
+<div class="app-window">
+<div class="window-bar">
+<span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+<span class="window-name">Daily focus report</span>
+</div>
+<div class="app-body">
+<div class="app-head">
+<div class="app-icon">👁</div>
+<div>
+<div class="app-title">Today overview</div>
+<div class="app-sub">Active time, idle time, tracked apps</div>
+</div>
+</div>
+<div class="kpis">
+<div class="kpi"><b>6h 12m</b><span>Total active time</span></div>
+<div class="kpi"><b>42m</b><span>Idle separated</span></div>
+<div class="kpi"><b>18</b><span>Apps tracked</span></div>
+</div>
+<div class="bar-list">
+<div class="bar-row"><span>Study / work</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><b>78%</b></div>
+<div class="bar-row"><span>Entertainment</span><div class="bar-track"><div class="bar-fill" style="width:52%"></div></div><b>52%</b></div>
+<div class="bar-row"><span>Creativity</span><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><b>36%</b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="section" id="features">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Features</div>
+<h2>Built around the way people actually use PCs.</h2>
+</div>
+<p class="section-lead">The point is not just “count time.” TimeTrack is built to explain where your time goes, separate real activity from away time, and give you enough control to correct categories when the app gets context wrong.</p>
+</div>
+<div class="features-layout">
+<aside class="feature-intro">
+<h3>What TimeTrack helps answer</h3>
+<p>Where did my day go? Which apps took the most time? Was I actually active, or was the PC just left on? What part of my browser use was work, entertainment, or creative activity?</p>
+<div class="mini-stack">
+<span>Tracking base <small>Apps + browser</small></span>
+<span>Accuracy logic <small>Idle excluded</small></span>
+<span>Behaviour layer <small>Focus + notes</small></span>
+<span>Review layer <small>Reports + timeline</small></span>
+</div>
+</aside>
+<div class="feature-grid">
+<article class="feature-card"><span class="feature-num">01</span><b>Active screen time</b><p>Tracks active PC use while keeping idle / away time separate from totals.</p></article>
+<article class="feature-card"><span class="feature-num">02</span><b>App usage</b><p>Shows how long your main Windows apps are used across the day.</p></article>
+<article class="feature-card"><span class="feature-num">03</span><b>Browser details</b><p>Breaks browser usage into page/window labels while hiding low-value clutter.</p></article>
+<article class="feature-card"><span class="feature-num">04</span><b>Category rules</b><p>Set apps or browser labels as Productivity, Entertainment, Creativity, or Other.</p></article>
+<article class="feature-card"><span class="feature-num">05</span><b>Reports</b><p>Daily, weekly, and monthly summaries with top app and timeline-style insight.</p></article>
+<article class="feature-card"><span class="feature-num">06</span><b>Focus sessions</b><p>Run focus and break sessions inside the same app you use to review time.</p></article>
+<article class="feature-card"><span class="feature-num">07</span><b>Notes tab</b><p>Save and reload notes for reflections, task context, or session tracking.</p></article>
+<article class="feature-card"><span class="feature-num">08</span><b>Theme controls</b><p>Adjust dark/light mode and interface colours for a better personal setup.</p></article>
+<article class="feature-card"><span class="feature-num">09</span><b>Simple activation</b><p>Install after purchase and follow the in-app activation flow.</p></article>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="preview">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Interactive preview</div>
+<h2>Click through a simplified TimeTrack window.</h2>
+</div>
+<p class="section-lead">This is a stylised mini-preview of the app tabs. It does not show every setting, but it gives buyers a clearer feel for how TimeTrack is structured before they download it.</p>
+</div>
+<div class="demo-shell" data-demo-tabs="">
+<div class="demo-top">
+<span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+<span class="demo-window-title">TimeTrack preview · v2.20</span>
+</div>
+<div aria-label="TimeTrack preview tabs" class="demo-tabs" role="tablist">
+<button class="demo-tab active" data-tab="today" type="button">Today</button>
+<button class="demo-tab" data-tab="reports" type="button">Reports</button>
+<button class="demo-tab" data-tab="focus" type="button">Focus</button>
+<button class="demo-tab" data-tab="notes" type="button">Notes</button>
+</div>
+<div class="demo-content">
+<section class="demo-panel active" data-panel="today">
+<div class="demo-panel-grid">
+<div class="demo-card">
+<h3>Today dashboard</h3>
+<p>See active screen time, app usage, category split, and current tracking state in one place.</p>
+<div class="demo-stat-grid">
+<div class="demo-stat"><b>1h 13m</b><span>active today</span></div>
+<div class="demo-stat"><b>15m</b><span>idle threshold</span></div>
+<div class="demo-stat"><b>ON</b><span>tracking status</span></div>
+</div>
+<div class="bar-list">
+<div class="bar-row"><span>ChatGPT</span><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><b>30m</b></div>
+<div class="bar-row"><span>Chrome</span><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><b>21m</b></div>
+<div class="bar-row"><span>Explorer</span><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><b>10m</b></div>
+</div>
+</div>
+<div class="demo-card">
+<h3>Apps / software</h3>
+<p>Low-value rows can stay hidden until they pass your selected threshold, keeping the view cleaner.</p>
+<div class="demo-table">
+<div class="demo-table-row head"><span>App</span><span>Time</span><span>Share</span></div>
+<div class="demo-table-row"><span>ChatGPT</span><span>30m</span><span>41%</span></div>
+<div class="demo-table-row"><span>Google Chrome</span><span>21m</span><span>29%</span></div>
+<div class="demo-table-row"><span>File Explorer</span><span>10m</span><span>14%</span></div>
+</div>
+<div class="demo-mini-note">Idle time is separated from total active screen time, so leaving your PC on does not inflate the main total.</div>
+</div>
+</div>
+</section>
+<section class="demo-panel" data-panel="reports">
+<div class="demo-panel-grid">
+<div class="demo-card">
+<h3>Reports timeline</h3>
+<p>Review usage across days, identify high-usage periods, and quickly see which app took the most time.</p>
+<div class="demo-stat-grid">
+<div class="demo-stat"><b>10h 58m</b><span>total in view</span></div>
+<div class="demo-stat"><b>3h 39m</b><span>active average</span></div>
+<div class="demo-stat"><b>ChatGPT</b><span>top app</span></div>
+</div>
+<div class="demo-chart">
+<span class="col" data-label="Mon" style="height:32%"></span>
+<span class="col" data-label="Tue" style="height:18%"></span>
+<span class="col" data-label="Wed" style="height:43%"></span>
+<span class="col" data-label="Thu" style="height:78%"></span>
+<span class="col" data-label="Fri" style="height:38%"></span>
+<span class="col" data-label="Sat" style="height:88%"></span>
+<span class="col" data-label="Sun" style="height:24%"></span>
+</div>
+</div>
+<div class="demo-card">
+<h3>Browser insight</h3>
+<p>When a browser is the top app, TimeTrack can surface useful page/window labels instead of only saying “Chrome”.</p>
+<div class="demo-table">
+<div class="demo-table-row head"><span>Browser detail</span><span>Time</span><span>Type</span></div>
+<div class="demo-table-row demo-browser-row"><span>Chrome · TimeTrack</span><span>18m</span><span>Work</span></div>
+<div class="demo-table-row demo-browser-row"><span>Chrome · Gumroad</span><span>12m</span><span>Work</span></div>
+<div class="demo-table-row demo-browser-row"><span>Chrome · Products</span><span>8m</span><span>Other</span></div>
+</div>
+<div class="demo-mini-note">Browser details appear after the selected minimum threshold, reducing clutter from tiny one-off page titles.</div>
+</div>
+</div>
+</section>
+<section class="demo-panel" data-panel="focus">
+<div class="demo-panel-grid">
+<div class="demo-card">
+<h3>Focus session</h3>
+<p>Use short blocks to stay on task, then take a break. The timer is separate from tracking reports.</p>
+<div class="demo-status">Focus session running · Round 1 of 2</div>
+<div class="demo-focus-time">24:18</div>
+<div class="demo-controls">
+<span class="demo-control">Start</span>
+<span class="demo-control">Pause</span>
+<span class="demo-control">Break</span>
+<span class="demo-control">Sound optional</span>
+</div>
+</div>
+<div class="demo-card">
+<h3>Intentional sessions</h3>
+<p>Focus sessions are useful when you want to stop drifting between apps and measure deliberate work time.</p>
+<div class="notes-box">
+<b>Session plan</b><br/>
+                      Finish one clear task.<br/>
+                      Avoid switching apps until the block ends.<br/>
                       Use the break to reset before the next round.
                     </div>
-                    <div class="demo-mini-note">Focus and break wording is shown clearly so users know which session is currently running.</div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="demo-panel" data-panel="notes">
-                <div class="demo-panel-grid">
-                  <div class="demo-card">
-                    <h3>Notes tab</h3>
-                    <p>Save quick notes inside TimeTrack and reload previous notes from your chosen notes folder.</p>
-                    <div class="notes-box">
-                      <b>Note title:</b> Product launch notes<br><br>
-                      Update Gumroad page.<br>
-                      Check licence approval workflow.<br>
-                      Test app timing for 10 minutes.<br>
+<div class="demo-mini-note">Focus and break wording is shown clearly so users know which session is currently running.</div>
+</div>
+</div>
+</section>
+<section class="demo-panel" data-panel="notes">
+<div class="demo-panel-grid">
+<div class="demo-card">
+<h3>Notes tab</h3>
+<p>Save quick notes inside TimeTrack and reload previous notes from your chosen notes folder.</p>
+<div class="notes-box">
+<b>Note title:</b> Product launch notes<br/><br/>
+                      Update Gumroad page.<br/>
+                      Check licence approval workflow.<br/>
+                      Test app timing for 10 minutes.<br/>
                       Review first user feedback.
                     </div>
-                    <div class="demo-controls">
-                      <span class="demo-control">Save note</span>
-                      <span class="demo-control">Load note</span>
-                      <span class="demo-control">New note</span>
-                      <span class="demo-control">Change folder</span>
-                    </div>
-                  </div>
-
-                  <div class="demo-card">
-                    <h3>Local-first notes</h3>
-                    <p>Notes are saved locally on the PC, keeping the workflow simple and avoiding cloud account setup.</p>
-                    <div class="demo-table">
-                      <div class="demo-table-row head"><span>Saved note</span><span>Type</span><span>Status</span></div>
-                      <div class="demo-table-row"><span>Study plan</span><span>Note</span><span>Saved</span></div>
-                      <div class="demo-table-row"><span>Launch tasks</span><span>Note</span><span>Saved</span></div>
-                      <div class="demo-table-row"><span>Weekly review</span><span>Note</span><span>Saved</span></div>
-                    </div>
-                    <div class="demo-mini-note">The real app includes more detail; this preview keeps it clean for the website.</div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="section" id="how">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <div class="eyebrow">How it works</div>
-              <h2>Simple enough to start fast.</h2>
-            </div>
-            <p class="section-lead">TimeTrack is meant to be practical: install it, start tracking, review your patterns, and use focus/notes when you want more intentional sessions.</p>
-          </div>
-
-          <div class="workflow">
-            <div class="step"><div class="step-num">01</div><b>Install TimeTrack</b><p>Download the Windows installer package after purchase.</p></div>
-            <div class="step"><div class="step-num">02</div><b>Activate in-app</b><p>Follow the activation steps shown inside TimeTrack.</p></div>
-            <div class="step"><div class="step-num">03</div><b>Track your day</b><p>Start tracking active app/browser usage while idle time stays separate.</p></div>
-            <div class="step"><div class="step-num">04</div><b>Review patterns</b><p>Use Today, Reports, Focus, and Notes to understand your behaviour.</p></div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="section" id="legal">
-        <div class="wrap">
-          <div class="section-head">
-            <div>
-              <div class="eyebrow">Legal</div>
-              <h2>Clear terms. Local-first privacy.</h2>
-            </div>
-            <p class="section-lead">These documents explain who publishes TimeTrack, how purchase and activation work, what data is handled, and the licence granted to each buyer. Last updated 15 June 2026.</p>
-          </div>
-
-          <div class="legal-meta">
-            <strong>Publisher:</strong> Gnarli &nbsp;·&nbsp;
-            <strong>Product:</strong> TimeTrack for Windows &nbsp;·&nbsp;
-            <strong>Contact:</strong> <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a><br>
+<div class="demo-controls">
+<span class="demo-control">Save note</span>
+<span class="demo-control">Load note</span>
+<span class="demo-control">New note</span>
+<span class="demo-control">Change folder</span>
+</div>
+</div>
+<div class="demo-card">
+<h3>Local-first notes</h3>
+<p>Notes are saved locally on the PC, keeping the workflow simple and avoiding cloud account setup.</p>
+<div class="demo-table">
+<div class="demo-table-row head"><span>Saved note</span><span>Type</span><span>Status</span></div>
+<div class="demo-table-row"><span>Study plan</span><span>Note</span><span>Saved</span></div>
+<div class="demo-table-row"><span>Launch tasks</span><span>Note</span><span>Saved</span></div>
+<div class="demo-table-row"><span>Weekly review</span><span>Note</span><span>Saved</span></div>
+</div>
+<div class="demo-mini-note">The real app includes more detail; this preview keeps it clean for the website.</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="how">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">How it works</div>
+<h2>Simple enough to start fast.</h2>
+</div>
+<p class="section-lead">TimeTrack is meant to be practical: install it, start tracking, review your patterns, and use focus/notes when you want more intentional sessions.</p>
+</div>
+<div class="workflow">
+<div class="step"><div class="step-num">01</div><b>Install TimeTrack</b><p>Download the Windows installer package after purchase.</p></div>
+<div class="step"><div class="step-num">02</div><b>Activate in-app</b><p>Follow the activation steps shown inside TimeTrack.</p></div>
+<div class="step"><div class="step-num">03</div><b>Track your day</b><p>Start tracking active app/browser usage while idle time stays separate.</p></div>
+<div class="step"><div class="step-num">04</div><b>Review patterns</b><p>Use Today, Reports, Focus, and Notes to understand your behaviour.</p></div>
+</div>
+</div>
+</section>
+<section class="section" id="purchase">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Purchase</div>
+<h2>Download through Gumroad.</h2>
+</div>
+<p class="section-lead">TimeTrack is delivered through Gumroad so checkout, file delivery, and buyer access stay simple. After installation, activate through the in-app activation flow.</p>
+</div>
+<div class="workflow">
+<div class="step"><div class="step-num">01</div><b>Buy on Gumroad</b><p>Use the download button to open the TimeTrack Gumroad checkout.</p></div>
+<div class="step"><div class="step-num">02</div><b>Download the ZIP</b><p>Gumroad gives you access to the Windows installer package after purchase.</p></div>
+<div class="step"><div class="step-num">03</div><b>Install TimeTrack</b><p>Run the installer and open TimeTrack from Windows.</p></div>
+<div class="step"><div class="step-num">04</div><b>Activate in-app</b><p>Follow the activation steps shown inside the app after purchase.</p></div>
+</div>
+<div class="hero-actions" style="justify-content:center;margin-top:28px;">
+<a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
+<span aria-disabled="true" class="btn disabled">macOS coming soon</span>
+</div>
+</div>
+</section>
+<section class="section" id="legal">
+<div class="wrap">
+<div class="section-head">
+<div>
+<div class="eyebrow">Legal</div>
+<h2>Clear terms. Local-first privacy.</h2>
+</div>
+<p class="section-lead">These documents explain who publishes TimeTrack, how purchase and activation work, what data is handled, and the licence granted to each buyer. Last updated 15 June 2026.</p>
+</div>
+<div class="legal-meta">
+<strong>Publisher:</strong> Gnarli  · 
+            <strong>Product:</strong> TimeTrack for Windows  · 
+            <strong>Contact:</strong> <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a><br/>
             TimeTrack activity data is stored locally by default. Purchases are completed through Gumroad, which acts as the reseller and merchant of record for the transaction.
           </div>
-
-          <div class="legal-grid">
-            <details class="legal-card" id="copyright" open>
-              <summary>Copyright notice</summary>
-              <div class="legal-copy">
-                <h3>Ownership</h3>
-                <p><strong>TimeTrack by Gnarli. © 2026 Gnarli. All rights reserved.</strong></p>
-                <p>The TimeTrack software, interface design, original graphics, documentation and website content are protected by copyright and other applicable intellectual-property laws.</p>
-                <h3>Permitted use</h3>
-                <p>A valid purchase gives the buyer a limited licence to install and use TimeTrack under the Software Licence below. Ownership of the software and source code is not transferred.</p>
-                <h3>Prohibited use</h3>
-                <p>You may not resell, share, upload, redistribute, repackage or publish TimeTrack, its installer, licence keys or substantial parts of its original content without written permission from Gnarli.</p>
-              </div>
-            </details>
-
-            <details class="legal-card" id="privacy">
-              <summary>Privacy Policy</summary>
-              <div class="legal-copy">
-                <h3>1. Who this policy covers</h3>
-                <p>This policy applies to the TimeTrack website, licence activation and support operated under the Gnarli publisher name. For privacy questions, contact <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a>.</p>
-
-                <h3>2. Information handled by the app</h3>
-                <p>TimeTrack records app names, window or browser labels, usage durations, idle periods, focus sessions, category rules, settings and notes on the user's Windows PC. This activity data is stored locally and is not automatically uploaded to Gnarli.</p>
-
-                <h3>3. Information received by Gnarli</h3>
-                <ul>
-                  <li>Checkout email and purchase-verification information supplied through Gumroad.</li>
-                  <li>TimeTrack Device ID, licence key and activation status.</li>
-                  <li>Emails, attachments and other information sent when requesting a key or support.</li>
-                  <li>Technical details voluntarily supplied when diagnosing an error.</li>
-                </ul>
-
-                <h3>4. Why the information is used</h3>
-                <p>Information is used to fulfil the software purchase, issue and validate licences, prevent unauthorised redistribution, provide support, maintain transaction records and comply with legal obligations. The main lawful bases are performance of a contract, legitimate interests in protecting and supporting the product, and legal obligations.</p>
-
-                <h3>5. Payments and third parties</h3>
-                <p>Gumroad handles checkout, payment, tax, receipts and first-tier transaction support as reseller and merchant of record. Email providers, website hosting providers and other service providers may process limited information needed to provide their services. Gnarli does not receive full card details.</p>
-
-                <h3>6. Cookies and analytics</h3>
-                <p>This static website does not currently use advertising cookies, behavioural tracking or a Gnarli analytics account. Gumroad and external services may apply their own privacy and cookie policies when you visit them. This notice will be updated before non-essential website tracking is introduced.</p>
-
-                <h3>7. Retention and security</h3>
-                <p>Licence and transaction-support records are normally kept for up to six years after the relevant transaction or last material interaction, unless a longer period is required for legal claims, fraud prevention or regulatory duties. Routine support correspondence may be deleted earlier when no longer needed. Reasonable technical and organisational measures are used to protect retained information.</p>
-
-                <h3>8. Your rights</h3>
-                <p>Depending on the circumstances, UK data-protection law may give you rights to access, correct, erase, restrict or object to the use of your personal information, and to request portability. You may also complain to the UK Information Commissioner's Office. Contact Gnarli first if you would like the issue investigated.</p>
-
-                <h3>9. Changes</h3>
-                <p>Material changes will be posted on this page with a revised update date.</p>
-              </div>
-            </details>
-
-            <details class="legal-card" id="terms">
-              <summary>Terms of Sale</summary>
-              <div class="legal-copy">
-                <h3>1. Product and publisher</h3>
-                <p>TimeTrack is a downloadable Windows software product published under the Gnarli name. Product descriptions, supported platforms and system requirements shown before purchase form part of the sale information.</p>
-
-                <h3>2. Gumroad checkout</h3>
-                <p>Purchases are completed through Gumroad. Gumroad acts as the reseller and merchant of record, handles payment processing, applicable indirect taxes, receipts, delivery access, refunds, chargebacks and payment disputes under its terms and applicable law.</p>
-
-                <h3>3. Digital delivery</h3>
-                <p>The product is supplied as digital content. Access is normally provided through the Gumroad receipt or buyer library after successful payment. The buyer is responsible for downloading and securely retaining the supplied installer and licence details.</p>
-
-                <h3>4. Activation</h3>
-                <p>TimeTrack may require the Gumroad checkout email, a Device ID and a licence key. A standard licence is intended for the buyer and one Windows PC unless a different licence is expressly offered. Providing false purchase details or sharing a key may result in activation refusal or licence termination.</p>
-
-                <h3>5. Compatibility</h3>
-                <p>The buyer should check that the current product supports their Windows version and hardware before purchase. A macOS version is not included unless expressly stated. No promise is made that every third-party app, browser title or future Windows release will be identified perfectly.</p>
-
-                <h3>6. Cancellations, refunds and faulty digital content</h3>
-                <p>Refund requests and transaction disputes are handled through Gumroad. Any wording on this website is subject to mandatory consumer rights. Nothing in these terms removes rights relating to digital content that is faulty, not as described or not supplied with reasonable care and skill. Where immediate download affects a statutory cancellation right, the required consent and acknowledgement must be obtained during checkout.</p>
-
-                <h3>7. Updates and support</h3>
-                <p>Reasonable support is provided through the contact address shown on this page. Updates may be released at Gnarli's discretion, but a one-time purchase does not guarantee every future major version, new platform or feature unless explicitly stated at checkout.</p>
-
-                <h3>8. Acceptable use</h3>
-                <p>The buyer must use TimeTrack lawfully and obtain any necessary permission before monitoring a shared, employer-owned or third-party device. TimeTrack is not sold as covert surveillance software.</p>
-
-                <h3>9. Liability and governing law</h3>
-                <p>Nothing excludes liability that cannot lawfully be excluded, including liability for fraud or mandatory consumer remedies. Subject to those rights, TimeTrack is provided for personal productivity and informational use and is not a substitute for professional timekeeping, payroll, legal or compliance systems. These terms are governed by the laws of England and Wales, while consumers retain mandatory protections available in their country of residence.</p>
-              </div>
-            </details>
-
-            <details class="legal-card" id="software-licence">
-              <summary>Software Licence</summary>
-              <div class="legal-copy">
-                <h3>1. Licence grant</h3>
-                <p>After a valid purchase, Gnarli grants the buyer a limited, revocable, non-exclusive, non-transferable licence to install and use TimeTrack on one Windows PC for personal or internal business use, subject to these terms.</p>
-
-                <h3>2. Licence restrictions</h3>
-                <p>The buyer must not:</p>
-                <ul>
-                  <li>sell, sublicense, rent, lend, share, publish or redistribute the software, installer or licence key;</li>
-                  <li>remove copyright, publisher or licence notices;</li>
-                  <li>circumvent activation, fabricate purchase records or use another buyer's credentials;</li>
-                  <li>reverse engineer, decompile or disassemble the software except to the limited extent that applicable law expressly permits this despite the restriction;</li>
-                  <li>use the software to violate privacy, employment, computer-misuse or other laws.</li>
-                </ul>
-
-                <h3>3. Ownership</h3>
-                <p>TimeTrack is licensed, not sold. Gnarli retains all rights, title and interest in the software, source code, original interface, documentation and updates. Third-party components remain subject to their own licences.</p>
-
-                <h3>4. Local data and backups</h3>
-                <p>Usage records, settings and notes are primarily stored on the user's PC. The user is responsible for device security, backups and lawful use of any information recorded by TimeTrack.</p>
-
-                <h3>5. Updates and changes</h3>
-                <p>Updates may fix faults, improve compatibility or change features. Gnarli may discontinue an old version or require an updated version where reasonably necessary for security, compatibility or licence integrity.</p>
-
-                <h3>6. Termination</h3>
-                <p>This licence ends if the buyer materially breaches it. On termination, the buyer must stop using and delete all copies of TimeTrack. Provisions concerning ownership, restrictions and liability continue where necessary.</p>
-
-                <h3>7. Warranty and consumer rights</h3>
-                <p>TimeTrack is supplied with the rights and remedies required by applicable law. No additional guarantee is given that tracking will be uninterrupted, error-free or suitable for every workflow. Nothing in this licence limits mandatory rights for digital content.</p>
-
-                <h3>8. Liability</h3>
-                <p>To the extent permitted by law, Gnarli is not responsible for indirect loss, lost profits, lost data or decisions made solely from TimeTrack reports. Nothing limits liability that cannot lawfully be limited.</p>
-
-                <h3>9. Governing law</h3>
-                <p>This licence is governed by the laws of England and Wales. Consumers continue to benefit from mandatory protections and courts available under applicable consumer law.</p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="wrap contact-box">
-          <div class="contact-panel">
-            <div class="eyebrow">Platform</div>
-            <h2>Windows first.</h2>
-            <p class="section-lead" style="margin-top:14px;">TimeTrack is currently built for Windows. A macOS version is being considered for a future release, but Windows is the current supported platform.</p>
-            <div class="platform-pills">
-              <span class="platform-pill">Windows available</span>
-              <span class="platform-pill dim">macOS coming soon</span>
-            </div>
-          </div>
-
-          <div class="contact-panel">
-            <div class="eyebrow">General enquiries</div>
-            <h2>Questions before buying?</h2>
-            <p class="section-lead" style="margin-top:14px;">For product questions before purchase, email <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a>.</p>
-            <p class="section-lead" style="font-size:15px;margin-top:14px;">Licence activation is handled after purchase through the in-app activation flow.</p>
-            <div class="hero-actions">
-              <a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
-              <span class="btn disabled">macOS coming soon</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap">
-        <div>TimeTrack by Gnarli · © 2026 Gnarli. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Sale</a>
-          <a href="#software-licence">Software Licence</a>
-          <a href="mailto:timetrack2026@outlook.com">Support</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script>
+<div class="legal-grid"><div class="legal-column"><details class="legal-card" id="copyright" open="">
+<summary>Copyright notice</summary>
+<div class="legal-copy">
+<h3>Ownership</h3>
+<p><strong>TimeTrack by Gnarli. © 2026 Gnarli. All rights reserved.</strong></p>
+<p>The TimeTrack software, interface design, original graphics, documentation and website content are protected by copyright and other applicable intellectual-property laws.</p>
+<h3>Permitted use</h3>
+<p>A valid purchase gives the buyer a limited licence to install and use TimeTrack under the Software Licence below. Ownership of the software and source code is not transferred.</p>
+<h3>Prohibited use</h3>
+<p>You may not resell, share, upload, redistribute, repackage or publish TimeTrack, its installer, licence keys or substantial parts of its original content without written permission from Gnarli.</p>
+</div>
+</details><details class="legal-card" id="terms">
+<summary>Terms of Sale</summary>
+<div class="legal-copy">
+<h3>1. Product and publisher</h3>
+<p>TimeTrack is a downloadable Windows software product published under the Gnarli name. Product descriptions, supported platforms and system requirements shown before purchase form part of the sale information.</p>
+<h3>2. Gumroad checkout</h3>
+<p>Purchases are completed through Gumroad. Gumroad acts as the reseller and merchant of record, handles payment processing, applicable indirect taxes, receipts, delivery access, refunds, chargebacks and payment disputes under its terms and applicable law.</p>
+<h3>3. Digital delivery</h3>
+<p>The product is supplied as digital content. Access is normally provided through the Gumroad receipt or buyer library after successful payment. The buyer is responsible for downloading and securely retaining the supplied installer and licence details.</p>
+<h3>4. Activation</h3>
+<p>TimeTrack may require the Gumroad checkout email, a Device ID and a licence key. A standard licence is intended for the buyer and one Windows PC unless a different licence is expressly offered. Providing false purchase details or sharing a key may result in activation refusal or licence termination.</p>
+<h3>5. Compatibility</h3>
+<p>The buyer should check that the current product supports their Windows version and hardware before purchase. A macOS version is not included unless expressly stated. No promise is made that every third-party app, browser title or future Windows release will be identified perfectly.</p>
+<h3>6. Cancellations, refunds and faulty digital content</h3>
+<p>Refund requests and transaction disputes are handled through Gumroad. Any wording on this website is subject to mandatory consumer rights. Nothing in these terms removes rights relating to digital content that is faulty, not as described or not supplied with reasonable care and skill. Where immediate download affects a statutory cancellation right, the required consent and acknowledgement must be obtained during checkout.</p>
+<h3>7. Updates and support</h3>
+<p>Reasonable support is provided through the contact address shown on this page. Updates may be released at Gnarli's discretion, but a one-time purchase does not guarantee every future major version, new platform or feature unless explicitly stated at checkout.</p>
+<h3>8. Acceptable use</h3>
+<p>The buyer must use TimeTrack lawfully and obtain any necessary permission before monitoring a shared, employer-owned or third-party device. TimeTrack is not sold as covert surveillance software.</p>
+<h3>9. Liability and governing law</h3>
+<p>Nothing excludes liability that cannot lawfully be excluded, including liability for fraud or mandatory consumer remedies. Subject to those rights, TimeTrack is provided for personal productivity and informational use and is not a substitute for professional timekeeping, payroll, legal or compliance systems. These terms are governed by the laws of England and Wales, while consumers retain mandatory protections available in their country of residence.</p>
+</div>
+</details></div><div class="legal-column"><details class="legal-card" id="privacy">
+<summary>Privacy Policy</summary>
+<div class="legal-copy">
+<h3>1. Who this policy covers</h3>
+<p>This policy applies to the TimeTrack website, licence activation and support operated under the Gnarli publisher name. For privacy questions, contact <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a>.</p>
+<h3>2. Information handled by the app</h3>
+<p>TimeTrack records app names, window or browser labels, usage durations, idle periods, focus sessions, category rules, settings and notes on the user's Windows PC. This activity data is stored locally and is not automatically uploaded to Gnarli.</p>
+<h3>3. Information received by Gnarli</h3>
+<ul>
+<li>Checkout email and purchase-verification information supplied through Gumroad.</li>
+<li>TimeTrack Device ID, licence key and activation status.</li>
+<li>Emails, attachments and other information sent when requesting a key or support.</li>
+<li>Technical details voluntarily supplied when diagnosing an error.</li>
+</ul>
+<h3>4. Why the information is used</h3>
+<p>Information is used to fulfil the software purchase, issue and validate licences, prevent unauthorised redistribution, provide support, maintain transaction records and comply with legal obligations. The main lawful bases are performance of a contract, legitimate interests in protecting and supporting the product, and legal obligations.</p>
+<h3>5. Payments and third parties</h3>
+<p>Gumroad handles checkout, payment, tax, receipts and first-tier transaction support as reseller and merchant of record. Email providers, website hosting providers and other service providers may process limited information needed to provide their services. Gnarli does not receive full card details.</p>
+<h3>6. Cookies and analytics</h3>
+<p>This static website does not currently use advertising cookies, behavioural tracking or a Gnarli analytics account. Gumroad and external services may apply their own privacy and cookie policies when you visit them. This notice will be updated before non-essential website tracking is introduced.</p>
+<h3>7. Retention and security</h3>
+<p>Licence and transaction-support records are normally kept for up to six years after the relevant transaction or last material interaction, unless a longer period is required for legal claims, fraud prevention or regulatory duties. Routine support correspondence may be deleted earlier when no longer needed. Reasonable technical and organisational measures are used to protect retained information.</p>
+<h3>8. Your rights</h3>
+<p>Depending on the circumstances, UK data-protection law may give you rights to access, correct, erase, restrict or object to the use of your personal information, and to request portability. You may also complain to the UK Information Commissioner's Office. Contact Gnarli first if you would like the issue investigated.</p>
+<h3>9. Changes</h3>
+<p>Material changes will be posted on this page with a revised update date.</p>
+</div>
+</details><details class="legal-card" id="software-licence">
+<summary>Software Licence</summary>
+<div class="legal-copy">
+<h3>1. Licence grant</h3>
+<p>After a valid purchase, Gnarli grants the buyer a limited, revocable, non-exclusive, non-transferable licence to install and use TimeTrack on one Windows PC for personal or internal business use, subject to these terms.</p>
+<h3>2. Licence restrictions</h3>
+<p>The buyer must not:</p>
+<ul>
+<li>sell, sublicense, rent, lend, share, publish or redistribute the software, installer or licence key;</li>
+<li>remove copyright, publisher or licence notices;</li>
+<li>circumvent activation, fabricate purchase records or use another buyer's credentials;</li>
+<li>reverse engineer, decompile or disassemble the software except to the limited extent that applicable law expressly permits this despite the restriction;</li>
+<li>use the software to violate privacy, employment, computer-misuse or other laws.</li>
+</ul>
+<h3>3. Ownership</h3>
+<p>TimeTrack is licensed, not sold. Gnarli retains all rights, title and interest in the software, source code, original interface, documentation and updates. Third-party components remain subject to their own licences.</p>
+<h3>4. Local data and backups</h3>
+<p>Usage records, settings and notes are primarily stored on the user's PC. The user is responsible for device security, backups and lawful use of any information recorded by TimeTrack.</p>
+<h3>5. Updates and changes</h3>
+<p>Updates may fix faults, improve compatibility or change features. Gnarli may discontinue an old version or require an updated version where reasonably necessary for security, compatibility or licence integrity.</p>
+<h3>6. Termination</h3>
+<p>This licence ends if the buyer materially breaches it. On termination, the buyer must stop using and delete all copies of TimeTrack. Provisions concerning ownership, restrictions and liability continue where necessary.</p>
+<h3>7. Warranty and consumer rights</h3>
+<p>TimeTrack is supplied with the rights and remedies required by applicable law. No additional guarantee is given that tracking will be uninterrupted, error-free or suitable for every workflow. Nothing in this licence limits mandatory rights for digital content.</p>
+<h3>8. Liability</h3>
+<p>To the extent permitted by law, Gnarli is not responsible for indirect loss, lost profits, lost data or decisions made solely from TimeTrack reports. Nothing limits liability that cannot lawfully be limited.</p>
+<h3>9. Governing law</h3>
+<p>This licence is governed by the laws of England and Wales. Consumers continue to benefit from mandatory protections and courts available under applicable consumer law.</p>
+</div>
+</details></div></div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="wrap contact-box">
+<div class="contact-panel">
+<div class="eyebrow">Platform</div>
+<h2>Windows first.</h2>
+<p class="section-lead" style="margin-top:14px;">TimeTrack is currently built for Windows. A macOS version is being considered for a future release, but Windows is the current supported platform.</p>
+<div class="platform-pills">
+<span class="platform-pill">Windows available</span>
+<span class="platform-pill dim">macOS coming soon</span>
+</div>
+</div>
+<div class="contact-panel">
+<div class="eyebrow">General enquiries</div>
+<h2>Questions before buying?</h2>
+<p class="section-lead" style="margin-top:14px;">For product questions before purchase, email <a class="email-link" href="mailto:timetrack2026@outlook.com">timetrack2026@outlook.com</a>.</p>
+<p class="section-lead" style="font-size:15px;margin-top:14px;">Licence activation is handled after purchase through the in-app activation flow.</p>
+<div class="hero-actions">
+<a class="btn" href="https://timetrack.gumroad.com/l/timetrack?wanted=true">Download for Windows</a>
+<span class="btn disabled">macOS coming soon</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<div>TimeTrack by Gnarli · © 2026 Gnarli. All rights reserved.</div>
+<div class="footer-links">
+<a href="#privacy">Privacy Policy</a>
+<a href="#terms">Terms of Sale</a>
+<a href="#software-licence">Software Licence</a>
+<a href="mailto:timetrack2026@outlook.com">Support</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
     (function () {
       const shell = document.querySelector('[data-demo-tabs]');
       if (!shell) return;
@@ -1395,6 +1371,5 @@
       activate('today');
     })();
   </script>
-
 </body>
 </html>
